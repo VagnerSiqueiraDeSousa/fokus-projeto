@@ -97,14 +97,14 @@ function iniciarOuPausar(){
    musicaPlay.play();
    intervaloId = setInterval(contagemRegressiva, 1000);
    iniciarOuPausarBt.textContent = "Pausar";
-   iniciarOuPausarBt.previousElementSibling.setAttribute('src','imagens/pause.png');
+   iniciarOuPausarBt.previousElementSibling.setAttribute('src','./imagens/pause.png');
 }
 
 
 function zerar(){
    clearInterval(intervaloId);
    iniciarOuPausarBt.textContent = "Começar";
-   iniciarOuPausarBt.previousElementSibling.setAttribute('src', '/imagens/play_arrow.png');
+   iniciarOuPausarBt.previousElementSibling.setAttribute('src', './imagens/play_arrow.png');
    intervaloId = null;
 }
 
